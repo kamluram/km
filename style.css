@@ -1,0 +1,393 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2b8576;
+    color: #333;
+    }
+    h1, h2, h3, h4, p {
+    margin-bottom: 20px;
+    }
+    /* Navbar Styles */
+    nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    }
+    nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the menu items */
+    gap: 40px; /* Adds space between each menu item */
+    }
+    nav ul li {
+    display: inline-block;
+    }
+    nav ul li a {
+    color: #ffe3e3;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+    color: #ff4d4d; /* Changes color on hover */
+    }
+
+    .logo img {
+        width: 150px;  /* Set the logo to a very small size */
+        height: auto; /* Maintain aspect ratio */
+      }
+      
+    /* Header Styles */
+    header {
+    background-color: #f09595;
+    color: #045d99;
+    text-align: center;
+    padding: 60px 20px;
+    }
+    header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    }
+    header p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    }
+    .cta-button, .cta-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #74006a;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    }
+    .cta-button:hover, .cta-link:hover {
+    background-color: #ff1a1a;
+    color: #a0b624;
+    }
+    .cta-link {
+    font-size: 1em;
+    margin-top: 10px;
+    }
+
+    /* Customer Section */
+    #home {
+    text-align: center;
+    padding: 50px 20px;
+    }
+    #home p {
+    font-size: 1.3em;
+    font-weight: bold;
+    }
+
+    #home img {
+        width: 50%; /* Adjust the width percentage as needed */
+        height: auto; /* Maintains aspect ratio */
+      }
+
+      
+    /* Featured In Section */
+    #featured {
+    background-color: #89ffa3;
+    padding: 50px 20px;
+    text-align: center;
+    }
+    #featured h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    }
+    #featured ul {
+    list-style: none;
+    padding: 0;
+    }
+    #featured ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+    
+    /* General style for the section */
+    .how-it-works {
+    padding: 50px;
+    text-align: center;
+    background-color: #93b8ee;
+    }
+    
+    /* Flexbox container to align images in a row */
+    .how-it-works img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px; /* Space between images */
+    }
+    
+    /* Flexbox container to display images in a row */
+    .how-it-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Centers the images vertically */
+    gap: 20px; /* Adds space between images */
+    }
+    
+    /* Ensure images are sized appropriately and aligned */
+    .how-it-works img {
+    flex: 1 1 250px; /* Ensures images grow, shrink, and have a base size */
+    max-width: 300px; /* Set max-width for images */
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
+    }
+    
+    /* Optionally, if you want different size images, you can adjust each class */
+    .hero-image {
+    width: 100%;
+    max-width: 400px; /* Specific max-width for hero image */
+    }
+    
+    .side-image {
+    width: 100%;
+    max-width: 250px; /* Specific max-width for side images */
+    }
+    
+    /* How It Works Section */
+    #how-it-works {
+    background-color: #056d5f;
+    padding: 60px 20px;
+    text-align: center;
+    }
+    #how-it-works h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    }
+    #how-it-works div {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #a3ffd9;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    #how-it-works h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    }
+    #how-it-works h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    }
+    #how-it-works p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    }
+    /* Meals Section */
+    #meals {
+    text-align: center;
+    padding: 60px 20px;
+    }
+    #meals h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    }
+    #meals p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    }
+    #meals div {
+    display: inline-block;
+    width: 45%;
+    background-color: #be6363;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    #meals h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    }
+    #meals p {
+    font-size: 1.1em;
+    }
+    /* Testimonials Section */
+    #testimonials {
+    background-color: #8dcff5;
+    padding: 60px 20px;
+    text-align: center;
+    }
+    #testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    }
+    #testimonials div {
+    display: inline-block;
+    width: 45%;
+    padding: 30px;
+    margin: 10px;
+    background-color: #ff79ed;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    #testimonials p {
+    font-size: 1.2em;
+    font-style: italic;
+    }
+
+    #testimonials div img {
+        width: 80px; 
+        height: auto; 
+        border-radius: 50%; 
+        margin-right: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+        animation: smileEffect 1.5s infinite; /* Automatically starts animation */
+      }
+      
+      @keyframes smileEffect {  
+        0%, 100% { transform: scale(1); } 
+        50% { transform: scale(1.05); }
+      }
+
+    /* Pricing Section */
+    #pricing {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5bcbc;
+    color: #7a0202;
+    }
+    #pricing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    }
+    #pricing p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    }
+    #pricing div {
+    display: inline-block;
+    width: 45%;
+    padding: 30px;
+    margin: 20px;
+    background-color: #00e1ff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    #pricing h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    }
+    #pricing p {
+    font-size: 1.1em;
+    }
+
+
+/* How It Works Section Images */
+.how-it-works img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(21, 182, 82, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    animation: lightGlow 3s infinite alternate ease-in-out;
+    opacity: 0.9;
+  }
+  
+  /* Hover Effects */
+  .how-it-works img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(27, 153, 27, 0.4);
+    opacity: 1;
+    filter: brightness(1.2);
+  }
+  
+  /* Jhalar Effect - Light Glow Animation */
+  @keyframes lightGlow {
+    0% {
+      transform: translateY(-5px) rotate(-2deg);
+      opacity: 0.85;
+      filter: brightness(1);
+    }
+    50% {
+      transform: translateY(5px) rotate(2deg);
+      opacity: 1;
+      filter: brightness(1.1);
+    }
+    100% {
+      transform: translateY(-5px) rotate(-2deg);
+      opacity: 0.85;
+      filter: brightness(1);
+    }
+  }
+
+    /* Get Started Section */
+    #get-started {
+    background-color: #336977;
+    padding: 60px 20px;
+    text-align: center;
+    } 
+    #get-started h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    }
+    #get-started form {
+    display: inline-block;
+    text-align: left;
+    }
+    #get-started input, #get-started select, #get-started button {
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #bbff00;
+    border-radius: 5px;
+    font-size: 1.1em;
+    }
+    #get-started button {
+    background-color: #0c0ab8;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    #get-started button:hover {
+    background-color: #ff00aa;
+    }
+    /* Footer Styles */
+    footer {
+    background-color: #333;
+    color: #0eddcc;
+    padding: 40px 20px;
+    text-align: center;
+    }
+    footer p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    }
+    footer address {
+    font-style: normal;
+    margin-bottom: 20px;
+    }
+    footer nav ul {
+    list-style: none;
+    padding: 0;
+    }
+    footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+    }
+    footer nav ul li a {
+    color: #97ecac;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    footer nav ul li a:hover {
+    color: #05e905; 
+    }
